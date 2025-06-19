@@ -8,7 +8,7 @@ resource "aws_security_group" "Jenkins-sg" {
 }
 
 variable "allowed_ports" {
-  default = ["22", "80", "443", "8080", "9000", "9100"]
+  default = ["22", "80", "443", "8080", "9000", "9100","3000"]
 }
 
 resource "aws_vpc_security_group_ingress_rule" "allow_tls_ipv4" {
